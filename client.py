@@ -30,6 +30,8 @@ os.environ[BF_ADAPTOR_PATH] = "/opt/bitfusion/lib/x86_64-linux-gnu/"
 os.environ[BF_ADAPTOR_RDMA] = "1"
 
 if __name__ == '__main__':
+    # update servers list
+    #
     os.system("bitfusion request_gpus 1")
     os.system("python "
               "/benchmark/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py"
