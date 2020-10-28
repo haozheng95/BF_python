@@ -27,7 +27,7 @@ os.environ[LD_LIBRARY_PATH] = "/opt/bitfusion/lib/x86_64-linux-gnu//bitfusion//l
                               "/bitfusion/usr/local/lib/:/opt/bitfusion/lib/x86_64-linux-gnu/bitfusion/lib/" \
                               ":/usr/share/bitfusion/:/bitfusion/lib/x86_64-linux-gnu/:"
 os.environ[BF_ADAPTOR_PATH] = "/opt/bitfusion/lib/x86_64-linux-gnu/"
-os.environ[BF_ADAPTOR_RDMA] = 1
+os.environ[BF_ADAPTOR_RDMA] = "1"
 
 if __name__ == '__main__':
     os.system("bitfusion request_gpus 1")
