@@ -27,3 +27,4 @@ if __name__ == '__main__':
     }
     resp = requests.get("https://10.117.32.176:56001/query", verify="/etc/bitfusion/tls/ca.crt", headers=headers)
     print(resp.status_code)
+    print(resp.json())
